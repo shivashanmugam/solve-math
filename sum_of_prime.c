@@ -12,19 +12,14 @@ main(){
 	printf("---%lld---",total);
 }
 
-
-int isPrime(input_num){
-	
+int isPrime(input_num){	
 	int i=0;
-	
 	//by default a number ending with 5 is not a prime number
 	if((input_num % 10)  == 5){
 		return 0;
 	}
 	
-	
-	for(i = 0;i < prime_count;i++){
-		
+	for(i = 0;i < prime_count;i++){	
 		if(input_num % prime_array[i] == 0){
 			return 0;
 		}
@@ -40,7 +35,6 @@ int isPrime(input_num){
 	}
 	prime_array[prime_count++] = input_num;
 	total = total + input_num;
-
 	return 1;
 }
 
